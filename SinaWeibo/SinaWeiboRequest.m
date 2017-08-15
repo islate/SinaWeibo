@@ -349,7 +349,7 @@
         BOOL hasRawData = NO;
         [request setHTTPBody:[self postBodyHasRawData:&hasRawData]];
         
-        //if (hasRawData)
+        if (hasRawData)
         {
             NSString* contentType = [NSString
                                      stringWithFormat:@"multipart/form-data; boundary=%@", kSinaWeiboRequestStringBoundary];
